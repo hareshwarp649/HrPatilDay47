@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AddressBookForm</title>
+  <link rel="stylesheet" href="AddressBookApp.css">
+</head>
+
+
+<body>
+  <header class="header-content header">
+    <div class="logo-content">
+      <img class="cancel-button-img" src="addressbooklogo.jfif" alt="logo image">
+      <div class="logo-text">
+        <span class="header-text">ADDRESS</span>
+        <span class="header-text book-text">BOOK</span>
+      </div>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="form-box">
+      <form class="form" action="HomePage_AddressBook.html" onsubmit="save(event)" onreset="resetForm()">
+        <div class="form-header">
+          <div class="form-head">PERSON ADDRESS FORM</div>
+          <div class="cancel-button">
+            <a href="HomePage_AddressBook.html">
+              <img class="cancel-button-img" src="CanButon.jfif" alt="cancel">
+            </a>
+          </div>
+        </div>
+        <div class="row-content">
+          <label class="label" for="name">FullName</label>
+          <input class="input" type="text" id="name" name="name" placeholder="Full Name.." required>
+        </div>
+        <error-output class="name-error" for='text'></error-output>
+        <div class="row-content address">
+          <label class="label address-label" for="address">Address</label>
+          <textarea class="input" type="text" id="address" name="address" placeholder="Address" required></textarea>
+        </div>
+        <error-output class="address-error" for='text'></error-output>
+        <div class="input-items">
+          <select id="city" name="city" required>
+            <option aria-placeholder="">Select City</option>
+            <option value="Vizag">Vizag</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Hyderabad">Hyderabad</option>
+          </select>
+          <select id="state" name="state" required>
+            <option aria-placeholder="">Select State</option>
+            <option value="Andhra Pradesh">Andres Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Utter Pradesh">Utter Pradesh</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Karnataka">Karnataka</option>
+          </select>
+          <input class="zip-code" type="text" id="zip" name="zip" placeholder="Zip Code" required>
+        </div>
+        <error-output class="zip-error" for='text'></error-output>
+        <div class="row-content">
+          <label class="label" for="phone">PhoneNo</label>
+          <input class="input" type="text" id="phone" name="phone" placeholder="Phone No" required>
+        </div>
+        <error-output class="phone-error" for='text'></error-output>
+        <div class="buttonParent">
+          <button type="submit" class="addButton" id="addButton">Add</button>
+          <button type="reset" class="resetButton" id="resetButton">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script defer src="HomePage_utility.js"></script>
+  <script defer src="../js/site_properties.js"></script>
+  <script defer src="AddressBook_Form.js"></script>
+  <script defer src="HomePage_AddressBook.js"></script>
+  <script defer src="homeService.js"></script>
+</body>
+
+</html>

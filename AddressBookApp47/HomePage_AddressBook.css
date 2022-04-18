@@ -1,0 +1,148 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    height: 100%;
+  }
+  
+  .header {
+    padding: 15px 0;
+    background-color: #ffffff;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 12px;
+    border: 0px solid red;
+  }
+  
+  .logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid green;
+    width: 60%;
+  }
+  
+  .logo-img {
+    max-width: 50px;
+    max-height: 50px;
+    padding-right: 10px;
+  }
+  
+  .header-text {
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #1785df;
+    text-transform: capitalize;
+  }
+  
+  .book-text {
+    color: rgb(100, 100, 100);
+  }
+  
+  .main-content {
+    display: flex;
+    align-items: center;
+    background-color: #e4e4e4;
+    min-height: 90vh;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 80px);
+    background-color: #e4e4e4;
+    padding: 30px 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .person-detail-text {
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    font-size: 25px;
+    font-weight: 780;
+  }
+  
+  .person-count {
+    background-color: #1785df;
+    color: #ffffff;
+    font-size: 25px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .add-button {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    background: #1785df 0% 0% no-repeat padding-box;
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 20px;
+    outline: none;
+    cursor: ;
+    text-decoration: none;
+  }
+  
+  .table {
+    justify-content: left;
+    align-items: center;
+    width: 80%;
+  
+  }
+  
+  td {
+    text-align: left;
+    width: 100%;
+    padding: 20px 20px;
+    padding-left: 40px;
+    background-color: #ffffff;
+  }
+  
+  .table-data {
+    border: 1px solid #cecece;
+    margin-bottom: 10px;
+  }
+  
+  th {
+    text-align: left;
+    width: 100%;
+    padding: 20px 20px;
+    padding-left: 40px;
+    border: 0px solid #dd4a10;
+    color: #467296;
+  }
+  
+  tr {
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid green;
+  }
+  
+  .address-block {
+    min-width: 400px;
+  }
+  
+  .buttons {
+    padding-right: 20px;
+  }
+  img {
+    cursor: pointer;
+  }
