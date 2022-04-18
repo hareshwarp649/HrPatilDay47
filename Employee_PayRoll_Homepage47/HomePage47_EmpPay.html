@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="HomePage47.css">
+ <link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
+  rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+ <title>Employee Payroll App</title>
+</head>
+
+<body>
+ <header class="header-content header">
+  <div class="logo-content">
+   <img src="logo.jfif" alt="">
+   <div>
+    <span class="emp-text">EMPLOYEE</span><br>
+    <span class="emp-text emp-payroll">PAYROLL</span>
+   </div>
+  </div>
+ </header>
+ <div class="main-content">
+  <div class="header-content ">
+   <div class="emp-detail-text">
+    Employee Details
+    <div class="emp-count">10</div>
+   </div>
+   <a href="Add_EmployeePay.html" class="add-button">
+    <img src="plusicon1.jfif" alt="">Add User
+   </div>
+  </div>
+  <div class="table-main">
+   <table id="table-display" class="table">
+    <tr>
+     <th></th>
+     <th>Name</th>
+     <th>Gender</th>
+     <th>Department</th>
+     <th>Salary</th>
+     <th>Start Date</th>
+     <th>Actions</th>
+    </tr>
+    <tr>
+     <td><img class="profile" src="th (4).jfif" alt="profile_img-1"></td>
+     <td>Sreenath</td>
+     <td>Male</td>
+     <td>
+      <div class="dept-label">HR</div>
+      <div class="dept-label">Finance</div>
+     </td>
+     <td>4000000</td>
+     <td>07 Feb 2022</td>
+     <td>
+      <img src="delete-10402.svg" alt="delete" id="1" onclick="remove(this)">
+      <img src="..\assets\icons\create-black-18dp.svg" alt="edit" id="1" onclick="update(this)">
+     </td>
+    </tr>
+   </table>
+  </div>
+ </div>
+ <script defer src="HomePage47.js"></script>
+ <script defer src="..\js\utility.js"></script>
+ <script defer src="..\js\site_properties.js"></script>
+ <script defer src="EmploPayRoll_AddEmp47.js"></script>
+</body>
+
+</html>
